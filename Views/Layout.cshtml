@@ -1,0 +1,36 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = null;
+	var homePage = CurrentPage.AncestorsOrSelf(1).First();
+	var menuItems = homePage.Children;
+	menuItems.Add(CurrentPage);
+}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>@Umbraco.Field("tabText") | @CurrentPage.Title</title>
+	<link href="~/Css/normalize.css" rel="stylesheet" />
+	<link href="~/Css/skeleton.css" rel="stylesheet" />
+	<link href="~/Css/style.min.css" rel="stylesheet" />
+	@RenderSection("head", false);
+</head>
+<body>
+	<div id="site-container">
+		<header>
+			<a href="~/" class="no-decoration"><h1 class="huge">@Umbraco.Field("siteTitle", recursive: true)</h1></a>
+		</header>
+		<nav class="row">
+			@foreach (var i in menuItems)
+			{
+				<a href="@i.Url" class="four columns site-nav @(CurrentPage.Id == i.Id ? "active" : "")"><span>@i.Title</span></a>
+			}
+		</nav>
+		<div class="content-container">
+			@RenderBody()
+		</div>
+		<footer>
+			<a rel="license" class="no-decoration" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a> | Jon Stødle<span class="@(string.IsNullOrEmpty(Umbraco.Field("twitterUrl").ToString()) || string.IsNullOrEmpty(Umbraco.Field("twitterName").ToString()) ? "hide" : null)"> | <a href="@Umbraco.Field("twitterUrl", recursive: true)">@@@Umbraco.Field("twitterName", recursive: true)</a></span>
+		</footer>
+	</div>
+</body>
+</html>

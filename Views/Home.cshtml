@@ -1,0 +1,19 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = "Layout.cshtml";
+
+	DateTime bday = new DateTime(1990, 09, 24);
+	DateTime today = DateTime.Today;
+	int age = today.Year - bday.Year;
+	if (bday > today.AddYears(-age)) { age--; }
+}
+
+<h2>@CurrentPage.Title</h2>
+<div class="body-text row">
+	<div class="one-half column">
+		@(new HtmlString(CurrentPage.Text.ToString().Replace("!!age!!", age.ToString())))
+	</div>
+	<div class="one-half column">
+		<img class="u-full-width" src="@CurrentPage.GetCropUrl("image", "300x500")" alt="@CurrentPage.ImageAltText" />
+	</div>
+</div>
