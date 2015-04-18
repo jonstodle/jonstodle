@@ -11,9 +11,10 @@
 <h2>@CurrentPage.Title</h2>
 <div class="body-text row">
 	<div class="one-half column">
+		<img class="u-full-width u-max-full-width hide-when-normal" src="@CurrentPage.GetCropUrl("image", "300x500")" alt="@CurrentPage.ImageAltText" />
 		@(new HtmlString(CurrentPage.Text.ToString().Replace("!!age!!", age.ToString())))
 	</div>
-	<div class="one-half column">
-		<img class="u-full-width" src="@CurrentPage.GetCropUrl("image", "300x500")" alt="@CurrentPage.ImageAltText" />
+	<div class="one-half column hide-when-compact">
+		<img class="u-full-width u-max-full-width" src="@CurrentPage.GetCropUrl("image", "300x500")" alt="@CurrentPage.ImageAltText" />
 	</div>
 </div>
