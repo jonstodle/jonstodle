@@ -4,6 +4,16 @@
   border-bottom: 1px solid black; }
 a.no-decoration, a.no-decoration:hover, a.no-decoration:active, a.no-decoration:visited {
   border-bottom-color: white; }
+a.site-nav {
+  text-align: center;
+  font-weight: 600;
+  border-style: solid;
+  border-color: white;
+  border-width: 0 0 1px 0; }
+  a.site-nav:hover {
+    border-color: black; }
+  a.site-nav.active {
+    border-color: black; }
 
 body {
   padding: 0 20px; }
@@ -40,16 +50,5 @@ footer {
 .huge {
   font-size: 7em;
   line-height: 1em; }
-
-.site-nav {
-  text-align: center;
-  font-weight: 600;
-  border-style: solid;
-  border-color: white;
-  border-width: 0 0 1px 0; }
-  .site-nav:hover {
-    border-color: black; }
-  .site-nav.active {
-    border-color: black; }
 
 /*# sourceMappingURL=style.css.map */

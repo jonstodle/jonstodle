@@ -12,6 +12,25 @@ a {
 			border-bottom-color: white;
 		}
 	}
+
+	&.site-nav {
+		text-align: center;
+		font-weight: 600;
+
+		border: {
+			style: solid;
+			color: white;
+			width: 0 0 1px 0;
+		}
+
+		&:hover {
+			border-color: black;
+		}
+
+		&.active {
+			border-color: black;
+		}
+	}
 }
 
 body {
@@ -42,18 +61,18 @@ footer {
 .hide {
 	display: none;
 
-	&-when-compact{
+	&-when-compact {
 		display: none;
 
-		@media(min-width: 550px){
+		@media(min-width: 550px) {
 			display: inherit;
 		}
 	}
 
-	&-when-normal{
+	&-when-normal {
 		display: inherit;
 
-		@media(min-width: 550px){
+		@media(min-width: 550px) {
 			display: none;
 		}
 	}
@@ -62,23 +81,4 @@ footer {
 .huge {
 	font-size: 7em;
 	line-height: 1em;
-}
-
-.site-nav {
-	text-align: center;
-	font-weight: 600;
-
-	border: {
-		style: solid;
-		color: white;
-		width: 0 0 1px 0;
-	}
-
-	&:hover {
-		border-color: black;
-	}
-
-	&.active {
-		border-color: black;
-	}
 }

@@ -2,13 +2,13 @@
 @{
 	Layout = null;
 	var homePage = CurrentPage.AncestorsOrSelf(1).First();
-	var menuItems = homePage.Children;
-	menuItems.Add(CurrentPage);
+	var menuItems = new List<dynamic>(homePage.Children);
+	menuItems.Insert(0, homePage);
 }
 <!DOCTYPE html>
 <html>
 <head>
-	<title>@Umbraco.Field("tabText") | @CurrentPage.Title</title>
+	<title>@Umbraco.Field("tabText", recursive: true) | @CurrentPage.Title</title>
 	<link href="~/Css/skeleton.css" rel="stylesheet" />
 	<link href="~/Css/style.min.css" rel="stylesheet" />
 	<link href="~/Css/text-styles.css" rel="stylesheet" />
@@ -29,7 +29,7 @@
 			@RenderBody()
 		</div>
 		<footer>
-			<a rel="license" class="no-decoration" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a> | Jon Stødle<span class="@(string.IsNullOrEmpty(Umbraco.Field("twitterUrl").ToString()) || string.IsNullOrEmpty(Umbraco.Field("twitterName").ToString()) ? "hide" : null)"> | <a href="@Umbraco.Field("twitterUrl", recursive: true)">@@@Umbraco.Field("twitterName", recursive: true)</a></span>
+			<a rel="license" class="no-decoration" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align: middle;" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a> | Jon Stødle<span class="@(string.IsNullOrEmpty(Umbraco.Field("twitterUrl").ToString()) || string.IsNullOrEmpty(Umbraco.Field("twitterName").ToString()) ? "hide" : null)"> | <a href="@Umbraco.Field("twitterUrl", recursive: true)">@@@Umbraco.Field("twitterName", recursive: true)</a></span>
 		</footer>
 	</div>
 </body>
