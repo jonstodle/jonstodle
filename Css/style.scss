@@ -1,4 +1,5 @@
-﻿@import "variables";
+﻿@import "mixins";
+@import "variables";
 
 a {
 	&, &:hover, &:active, &:visited {
@@ -94,7 +95,7 @@ footer {
 		line-height: .8em;
 	}
 
-	&-nav{
+	&-nav {
 		margin-top: 30px;
 	}
 }
@@ -110,5 +111,16 @@ footer {
 
 	&-center {
 		text-align: center;
+	}
+}
+
+.project {
+	&-list-item {
+		height: 200px;
+		@include vertical-align-parent;
+
+		&-name {
+			@include vertical-align-bottom;
+		}
 	}
 }

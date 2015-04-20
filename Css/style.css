@@ -66,4 +66,15 @@ footer {
 .text-center {
   text-align: center; }
 
+.project-list-item {
+  height: 200px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+  .project-list-item-name {
+    position: relative;
+    top: 100%;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%); }
+
 /*# sourceMappingURL=style.css.map */
