@@ -1,9 +1,18 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
-    Layout = "Layout.cshtml";
+	Layout = "Layout.cshtml";
+	var blogItems = new List<dynamic>(CurrentPage.Children);
+	blogItems.Reverse();
 }
-
-<h2>@CurrentPage.Title</h2>
-<div class="body-text">
-
+<div class="body-text" ng-controller="blogController">
+	@foreach (var i in blogItems)
+	{
+		<div class="row">
+			<a class="twelve columns no-decoration" href="#" ng-click="@("post" + i.Id.ToString()) = !@("post" + i.Id.ToString())"><h3>@i.Title</h3></a>
+			<div class="twelve columns"></div>
+			<div class="twelve columns blog-post" ng-show="@("post" + i.Id.ToString())">
+				@i.Content
+			</div>
+		</div>
+	}
 </div>

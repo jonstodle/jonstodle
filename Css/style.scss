@@ -46,12 +46,16 @@ body {
 }
 
 footer {
-	margin: 30px 0;
+	margin: 50px 0 30px 0;
 }
 
 #site-container {
 	max-width: $siteWidth;
 	margin: 0 auto;
+}
+
+.body-text {
+	margin-top: 100px;
 }
 
 .content-container {
@@ -81,4 +85,30 @@ footer {
 .huge {
 	font-size: 7em;
 	line-height: 1em;
+}
+
+.site {
+	&-header {
+		@extend .huge;
+		@extend .text-right;
+		line-height: .8em;
+	}
+
+	&-nav{
+		margin-top: 30px;
+	}
+}
+
+.text {
+	&-left {
+		text-align: left;
+	}
+
+	&-right {
+		text-align: right;
+	}
+
+	&-center {
+		text-align: center;
+	}
 }
