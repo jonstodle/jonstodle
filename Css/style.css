@@ -37,6 +37,19 @@ footer {
 .content-container {
   margin-top: 50px; }
 
+.blog-list-header:hover {
+  cursor: pointer; }
+.blog-list-item {
+  margin-top: 80px; }
+.blog-title {
+  margin-bottom: 0; }
+.blog-metadata {
+  font-variant: small-caps; }
+.blog-post {
+  margin-top: 20px;
+  text-align: justify;
+  word-wrap: break-word; }
+
 .hide {
   display: none; }
   .hide-when-compact {
@@ -59,6 +72,9 @@ footer {
 .site-nav {
   margin-top: 30px; }
 
+.subtle, .blog-metadata {
+  opacity: 0.4; }
+
 .text-left {
   text-align: left; }
 .text-right, .site-header {
@@ -67,9 +83,9 @@ footer {
   text-align: center; }
 
 .project-list-item {
-  height: 200px;
   -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d; }
+  transform-style: preserve-3d;
+  height: 200px; }
   .project-list-item-name {
     position: relative;
     top: 100%;

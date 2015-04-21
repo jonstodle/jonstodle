@@ -7,9 +7,9 @@
 <div class="body-text" ng-controller="blogController">
 	@foreach (var i in blogItems)
 	{
-		<div class="row">
-			<a class="twelve columns no-decoration" href="#" ng-click="@("post" + i.Id.ToString()) = !@("post" + i.Id.ToString())"><h3>@i.Title</h3></a>
-			<div class="twelve columns"></div>
+		<div class="row blog-list-item">
+			<a class="twelve columns no-decoration blog-list-header" ng-click="@("post" + i.Id.ToString()) = !@("post" + i.Id.ToString())"><h3 class="blog-title">@i.Title</h3></a>
+			<div class="twelve columns"><span class="blog-metadata">written by</span> @i.WriterName | <span class="blog-metadata">published at</span> @(((DateTime)i.UpdateDate).ToString("d"))</div>
 			<div class="twelve columns blog-post" ng-show="@("post" + i.Id.ToString())">
 				@i.Content
 			</div>

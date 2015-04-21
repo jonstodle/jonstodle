@@ -10,8 +10,12 @@
 	@foreach (var i in projects)
 	{
 		<div class="row">
-			<div class="twelve columns project-list-item">
-				<h4 class="project-list-item-name">@i.Projectname</h4>
+			<div class="twelve columns" style="background: url(http://placekitten.com/g/800/200)">
+				<a href="#">
+					<div class="project-list-item">
+						<h4 class="project-list-item-name">@i.Projectname</h4>
+					</div>
+				</a>
 			</div>
 		</div>
 	}

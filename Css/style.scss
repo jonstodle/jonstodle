@@ -63,6 +63,35 @@ footer {
 	margin-top: 50px;
 }
 
+.blog {
+	&-list {
+		&-header {
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+		&-item {
+			margin-top: 80px;
+		}
+	}
+
+	&-title {
+		margin-bottom: 0;
+	}
+
+	&-metadata {
+		@extend .subtle;
+		font-variant: small-caps;
+	}
+
+	&-post {
+		margin-top: 20px;
+		text-align: justify;
+		word-wrap: break-word;
+	}
+}
+
 .hide {
 	display: none;
 
@@ -100,6 +129,10 @@ footer {
 	}
 }
 
+.subtle {
+	opacity: .4;
+}
+
 .text {
 	&-left {
 		text-align: left;
@@ -116,11 +149,12 @@ footer {
 
 .project {
 	&-list-item {
-		height: 200px;
 		@include vertical-align-parent;
+		height: 200px;
 
 		&-name {
 			@include vertical-align-bottom;
+			background: rgba(255,255,255,0.4);
 		}
 	}
 }
