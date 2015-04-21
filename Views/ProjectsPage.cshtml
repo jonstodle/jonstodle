@@ -1,4 +1,18 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
-    Layout = "Layout.cshtml";
+	Layout = "Layout.cshtml";
+	var projects = new List<dynamic>(CurrentPage.Children);
+	projects = projects.OrderBy(x => x.ProjectName).ToList();
 }
+<div class="body-text">
+	<p>@CurrentPage.Text</p>
+
+	@foreach (var i in projects)
+	{
+		<div class="row">
+			<div class="twelve columns project-list-item">
+				<h4 class="project-list-item-name">@i.Projectname</h4>
+			</div>
+		</div>
+	}
+</div>
