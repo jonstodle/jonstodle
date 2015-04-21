@@ -2,18 +2,19 @@
 @{
 	Layout = "Layout.cshtml";
 }
-<h2>@CurrentPage.Title</h2>
-<div class="body-text row" ng-controller="projectController">
-	<div class="one-half column">
-		<ul rn-carousel rn-carousel-controls>
-			@foreach (var i in CurrentPage.Images.Split(','))
-			{
-				<li><img class="u-max-full-width" src="@Umbraco.Media(i).Url" alt="" /></li>
-			}
-		</ul>
-
-	</div>
-	<div class="one-half column">
-		@CurrentPage.Description
+<div class="body-text" ng-controller="projectController">
+	<h2 class="text-right">@CurrentPage.Title</h2>
+	<div class="row">
+		<div class="one-half column">
+			<ul rn-carousel rn-carousel-controls>
+				@foreach (var i in CurrentPage.Images.Split(','))
+				{
+					<li><img class="u-max-full-width" src="@Umbraco.Media(i).Url" alt="" /></li>
+				}
+			</ul>
+		</div>
+		<div class="one-half column project-description">
+			@CurrentPage.Description
+		</div>
 	</div>
 </div>
