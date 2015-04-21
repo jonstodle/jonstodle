@@ -1,5 +1,7 @@
-﻿var jsApp = angular.module("jsApp", []);
+﻿var jsApp = angular.module("jsApp", ["angular-carousel"]);
 
 jsApp.controller("blogController", function ($scope) {
-	$scope.toggle = false;
+});
+
+jsApp.controller("projectController", function ($scope) {
 });

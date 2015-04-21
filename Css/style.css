@@ -91,6 +91,7 @@ footer {
     top: 100%;
     -webkit-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
-    transform: translateY(-100%); }
+    transform: translateY(-100%);
+    background: rgba(255, 255, 255, 0.4); }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,13 +5,13 @@
 	projects = projects.OrderBy(x => x.ProjectName).ToList();
 }
 <div class="body-text">
-	<p>@CurrentPage.Text</p>
+	<h5 class="text-center">@(((string)CurrentPage.Text).ToUpper())</h5>
 
 	@foreach (var i in projects)
 	{
 		<div class="row">
-			<div class="twelve columns" style="background: url(http://placekitten.com/g/800/200)">
-				<a href="#">
+			<div class="twelve columns" style="background: url(@i.GetCropUrl("banner", "Project Banner"))">
+				<a href="@i.Url">
 					<div class="project-list-item">
 						<h4 class="project-list-item-name">@i.Projectname</h4>
 					</div>
