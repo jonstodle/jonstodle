@@ -10,10 +10,12 @@
 	@foreach (var i in projects)
 	{
 		<div class="row">
-			<div class="twelve columns" style="background: url(@i.GetCropUrl("banner", "Project Banner"))">
+			<div class="twelve columns project-list-item-container" style="background: url(@i.GetCropUrl("banner", "Project Banner"))">
 				<a href="@i.Url">
 					<div class="project-list-item">
-						<h4 class="project-list-item-name">@i.Title</h4>
+						<div class="project-list-item-name-container">
+							<h4 class="project-list-item-name">@i.Title</h4>
+						</div>
 					</div>
 				</a>
 			</div>

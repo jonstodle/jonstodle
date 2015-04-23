@@ -75,25 +75,33 @@ footer {
 .subtle, .blog-metadata {
   opacity: 0.4; }
 
+.image-view {
+  position: relative; }
+  .image-view-item {
+    position: absolute; }
+
 .text-left {
   text-align: left; }
 .text-right, .site-header {
   text-align: right; }
-.text-center {
+.text-center, .store-link-container {
   text-align: center; }
 
 .project-list-item {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   height: 200px; }
-  .project-list-item-name {
+  .project-list-item-name-container {
     position: relative;
     top: 100%;
     -webkit-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
     transform: translateY(-100%);
     background: rgba(255, 255, 255, 0.5); }
+  .project-list-item-name {
+    margin: 0 0 0 10px; }
 .project-description {
   text-align: justify; }
+
 
 /*# sourceMappingURL=style.css.map */

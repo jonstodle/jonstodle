@@ -133,6 +133,14 @@ footer {
 	opacity: .4;
 }
 
+.image-view{
+	position: relative;
+
+	&-item{
+		position: absolute;
+	}
+}
+
 .text {
 	&-left {
 		text-align: left;
@@ -151,14 +159,25 @@ footer {
 	&-list-item {
 		@include vertical-align-parent;
 		height: 200px;
+		
 
-		&-name {
+		&-name-container{
 			@include vertical-align-bottom;
 			background: rgba(255,255,255,0.5);
 		}
+
+		&-name {
+			margin: 0 0 0 10px;
+		}
 	}
 
-	&-description{
+	&-description {
 		text-align: justify;
+	}
+}
+
+.store-link{
+	&-container{
+		@extend .text-center;
 	}
 }
