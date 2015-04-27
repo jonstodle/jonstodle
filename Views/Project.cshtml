@@ -15,10 +15,10 @@
 				<div><img class="u-max-full-width" src="@Umbraco.Media(i).Url" alt="" /></div>
 			}
 		</div>
-	</div>
-	<div class="one-half column project-description">
-		@CurrentPage.Description
-		<p class="store-link-container@(string.IsNullOrEmpty((string)CurrentPage.StoreLink) ? " hide" : "")"><a class="store-link no-decoration" href="@CurrentPage.StoreLink"><img class="store-link-image" src="~/Images/258x67_WPS_Download_revblk.png" alt="Windows Store Link" /></a></p>
+		<div class="one-half column project-description">
+			@CurrentPage.Description
+			<p class="store-link-container@(string.IsNullOrEmpty((string)CurrentPage.StoreLink) ? " hide" : "")"><a class="store-link no-decoration" href="@CurrentPage.StoreLink"><img class="store-link-image" src="~/Images/258x67_WPS_Download_revblk.png" alt="Windows Store Link" /></a></p>
+		</div>
 	</div>
 </div>
 </div>
