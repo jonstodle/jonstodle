@@ -11,7 +11,7 @@
 			<div class="twelve columns">
 				<span class="blog-metadata">written by</span> @i.WriterName |
 				<span class="blog-metadata">created at</span> @(((DateTime)i.CreateDate).ToString("d"))
-				<span class="@((i.UpdateDate - i.CreateDate).TotalDays > 0 ? "hide" : string.Empty)">| <span class="blog-metadata">updated at</span> @(((DateTime)i.UpdateDate).ToString("d"))</span>
+				<span class="@(Math.Floor((i.UpdateDate - i.CreateDate).TotalDays) > 0 ? string.Empty : "hide")">| <span class="blog-metadata">updated at</span> @(((DateTime)i.UpdateDate).ToString("d"))</span>
 			</div>
 			<div class="twelve columns blog-post" ng-show="@("post" + i.Id.ToString())">
 				@i.Content
