@@ -160,6 +160,9 @@ footer {
 		@include vertical-align-parent;
 		height: 200px;
 		
+        &-container{
+            margin-bottom: 80px;
+        }
 
 		&-name-container{
 			@include vertical-align-bottom;
