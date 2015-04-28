@@ -91,6 +91,8 @@ footer {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   height: 200px; }
+  .project-list-item-container {
+    margin-bottom: 80px; }
   .project-list-item-name-container {
     position: relative;
     top: 100%;
