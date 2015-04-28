@@ -4,11 +4,6 @@
 }
 <div class="body-text" ng-controller="projectController">
 	<div class="row">
-		<div class="one-half column offset-by-one-half">
-			<h2 class="">@CurrentPage.Title</h2>
-		</div>
-	</div>
-	<div class="row">
 		<div class="one-half column">
 			@foreach (var i in CurrentPage.Images.Split(','))
 			{
@@ -16,6 +11,7 @@
 			}
 		</div>
 		<div class="one-half column project-description">
+			<h2 class="">@CurrentPage.Title</h2>
 			@CurrentPage.Description
 			<p class="store-link-container@(string.IsNullOrEmpty((string)CurrentPage.StoreLink) ? " hide" : "")"><a class="store-link no-decoration" href="@CurrentPage.StoreLink"><img class="store-link-image" src="~/Images/258x67_WPS_Download_revblk.png" alt="Windows Store Link" /></a></p>
 		</div>
