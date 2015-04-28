@@ -1,9 +1,9 @@
-﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{umbraco.library.ChangeContentType("text/xml");
 
 var siteURL = "http://" + Request.Url.Host;
-var HomePage = CurrentPage.AncestorsOrSelf(1).First();
-var RSSFeedPubDate = HomePage.Descendants("Blog Post").OrderBy("createDate desc").First();
+var HomePage = CurrentPage.Previous().Children.First();
+var RSSFeedPubDate = HomePage.Descendants("BlogPost").OrderBy("createDate desc").First();
 
 }<?xml version="1.0" encoding="UTF-8" ?>
 
@@ -17,7 +17,7 @@ var RSSFeedPubDate = HomePage.Descendants("Blog Post").OrderBy("createDate desc"
 		<language>en</language>
 		@{
 
-			foreach (var release in HomePage.Descendants("Blog Post").OrderBy("createDate desc").Take(10))
+			foreach (var release in HomePage.Descendants("BlogPost").OrderBy("createDate desc").Take(10))
 			{
 				<item>
 					<title>@release.Name</title>
