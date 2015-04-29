@@ -37,6 +37,8 @@ footer {
 .content-container {
   margin-top: 50px; }
 
+.blog-comments {
+  margin-top: 20px; }
 .blog-list-header:hover {
   cursor: pointer; }
 .blog-list-item {
