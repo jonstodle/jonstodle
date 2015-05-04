@@ -34,6 +34,14 @@ footer {
 .body-text {
   margin-top: 100px; }
 
+.carousel-container {
+  position: relative; }
+.carousel-content li {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.5s; }
+
 .content-container {
   margin-top: 50px; }
 
