@@ -9,7 +9,7 @@
 	<ul class="carousel-content">*@
 					@foreach (var i in CurrentPage.Images.Split(','))
 					{
-						<li><img class="u-max-full-width" src="@Umbraco.Media(i).Url" alt="" /></li>
+						<img class="u-max-full-width" src="@Umbraco.Media(i).Url" alt="" />
 					}
 				</ul>
 			@*</div>
