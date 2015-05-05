@@ -9,8 +9,8 @@
 		<span class="blog-metadata">created at</span> @(((DateTime)CurrentPage.CreateDate).ToString("d"))
 		<span class="@(Math.Floor((CurrentPage.UpdateDate - CurrentPage.CreateDate).TotalDays) > 0 ? string.Empty : "hide")">| <span class="blog-metadata">updated at</span> @(((DateTime)CurrentPage.UpdateDate).ToString("d"))</span>
 	</div>
-	<div class="twelve columns blog-post" ng-show="@("post" + CurrentPage.Id.ToString())">
-		@CurrentPage.Content
+	<div class="twelve columns blog-post">
+		@Umbraco.Field("bodyText")
 	</div>
 	<div class="twelve columns blog-comments">
 		<div id="disqus_thread"></div>
