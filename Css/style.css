@@ -35,7 +35,8 @@ footer {
   margin-top: 100px; }
 
 .carousel-container {
-  position: relative; }
+  position: relative;
+  height: inherit; }
 .carousel-content li {
   position: absolute;
   pointer-events: none;
@@ -53,6 +54,26 @@ footer {
     -moz-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s; }
+.carousel-controls {
+  position: absolute; }
+.carousel-control, .carousel-control-left, .carousel-control-right {
+  position: absolute;
+  height: 100%;
+  width: 48%;
+  background-color: white; }
+  .carousel-control-left {
+    left: 0;
+    content: "<"; }
+  .carousel-control-right {
+    right: 0;
+    content: ">"; }
+  .carousel-control:hover, .carousel-control-left:hover, .carousel-control-right:hover {
+    opacity: 0.6;
+    -webkit-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
 
 .content-container {
   margin-top: 50px; }

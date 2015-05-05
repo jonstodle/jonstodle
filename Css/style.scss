@@ -62,6 +62,7 @@ footer {
 .carousel {
 	&-container {
 		position: relative;
+		height: inherit;
 	}
 
 	&-content {
@@ -76,6 +77,34 @@ footer {
 				opacity: 1;
 				@include vendor-prefix(transition, .5s);
 			}
+		}
+	}
+
+	&-controls{
+		position: absolute;
+	}
+
+	&-control{
+		position: absolute;
+		height: 100%;
+		width: 48%;
+		background-color: white;
+
+		&-left{
+			@extend .carousel-control;
+			left: 0;
+			content: "<";
+		}
+
+		&-right{
+			@extend .carousel-control;
+			right: 0;
+			content: ">";
+		}
+
+		&:hover{
+			opacity: .6;
+			@include vendor-prefix(transition, .2s);
 		}
 	}
 }

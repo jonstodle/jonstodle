@@ -6,12 +6,15 @@
 	<div class="row">
 		<div class="one-half column">
 			<div class="carousel-container">
+				<div class="carousel-controls">
+
+				</div>
 				<ul class="carousel-content">
 					@*@foreach (var i in CurrentPage.Images.Split(','))*@
 					@for (int i = 0; i < 5; i++)
 					{
 						@*<li><img class="u-max-full-width" src="@Umbraco.Media(i).Url" alt="" /></li>*@
-						<li><img class="u-max-full-width" src="http://placekitten.com/g/480/600" alt="" /></li>
+						<li class="current"><img class="u-max-full-width" src="http://placekitten.com/g/480/600" alt="" /></li>
 					}
 				</ul>
 			</div>
