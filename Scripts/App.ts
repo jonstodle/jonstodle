@@ -1,4 +1,4 @@
-﻿var jsApp = angular.module("jsApp", []);
+﻿var jsApp = angular.module("jsApp", ["ui.bootstrap"]);
 
 jsApp.controller("blogController", function ($scope) {
 });

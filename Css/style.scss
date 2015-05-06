@@ -62,7 +62,6 @@ footer {
 .carousel {
 	&-container {
 		position: relative;
-		overflow: hidden;
 	}
 
 	&-content {
@@ -77,6 +76,12 @@ footer {
 				opacity: 1;
 				@include vendor-prefix(transition, .5s);
 			}
+		}
+	}
+
+	&-controls{
+		& button{
+			width: 49%;
 		}
 	}
 }

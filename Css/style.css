@@ -40,9 +40,6 @@ footer {
   position: absolute;
   pointer-events: none;
   opacity: 0;
-<<<<<<< HEAD
-  transition: 0.5s; }
-=======
   -webkit-transition: 0.5s;
   -ms-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -56,7 +53,8 @@ footer {
     -moz-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s; }
->>>>>>> parent of 6afe869... Attempt to make the div stretch vertically
+.carousel-controls button {
+  width: 49%; }
 
 .content-container {
   margin-top: 50px; }
@@ -74,6 +72,10 @@ footer {
 .blog-post {
   margin-top: 20px;
   text-align: justify;
+  -webkit-word-wrap: break-word;
+  -ms-word-wrap: break-word;
+  -moz-word-wrap: break-word;
+  -o-word-wrap: break-word;
   word-wrap: break-word; }
 
 .hide {
