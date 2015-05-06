@@ -5,16 +5,6 @@
 <div class="body-text" ng-controller="projectController">
 	<div class="row">
 		<div class="one-half column">
-<<<<<<< HEAD
-			@*<div class="carousel-container">
-				<ul class="carousel-content">*@
-			@foreach (var i in CurrentPage.Images.Split(','))
-			{
-				<img class="u-max-full-width" src="@Umbraco.Media(i).Url" alt="" />
-			}
-			@*</ul>
-				</div>*@
-=======
 			<div class="carousel-container">
 				<ul class="carousel-content">
 					@*@foreach (var i in CurrentPage.Images.Split(','))*@
@@ -25,7 +15,6 @@
 					}
 				</ul>
 			</div>
->>>>>>> parent of 6afe869... Attempt to make the div stretch vertically
 		</div>
 		<div class="one-half column project-description">
 			<h2 class="">@CurrentPage.Title</h2>
