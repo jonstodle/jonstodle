@@ -40,7 +40,23 @@ footer {
   position: absolute;
   pointer-events: none;
   opacity: 0;
+<<<<<<< HEAD
   transition: 0.5s; }
+=======
+  -webkit-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  list-style: none; }
+  .carousel-content li.current {
+    opacity: 1;
+    -webkit-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+>>>>>>> parent of 6afe869... Attempt to make the div stretch vertically
 
 .content-container {
   margin-top: 50px; }
