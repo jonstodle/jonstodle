@@ -10,7 +10,7 @@
 		<span class="@(Math.Floor((CurrentPage.UpdateDate - CurrentPage.CreateDate).TotalDays) > 0 ? string.Empty : "hide")">| <span class="blog-metadata">updated at</span> @(((DateTime)CurrentPage.UpdateDate).ToString("d"))</span>
 	</div>
 	<div class="twelve columns blog-post">
-		@Umbraco.Field("bodyText")
+		@Html.Markdown(Umbraco.Field("bodyText").ToString())
 	</div>
 	<div class="twelve columns blog-comments">
 		<div id="disqus_thread"></div>
