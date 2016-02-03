@@ -1373,3 +1373,69 @@ _shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needF
    at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
    at System.Threading.ThreadPoolWorkQueue.Dispatch()
    at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+ 2016-02-03 01:07:18,574 [P18564/D7/T30] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: jonstodle@gmail.com, IP Address: ::1
+ 2016-02-03 01:09:19,705 [P18564/D7/T32] INFO  umbraco.content - Load Xml from file...
+ 2016-02-03 01:09:19,707 [P18564/D7/T32] ERROR umbraco.content - Failed to load Xml from file.
+System.Xml.XmlException: There is no Unicode byte order mark. Cannot switch to Unicode.
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.ThrowWithoutLineInfo(String res)
+   at System.Xml.XmlTextReaderImpl.CheckEncoding(String newEncodingName)
+   at System.Xml.XmlTextReaderImpl.ParseXmlDeclaration(Boolean isTextDecl)
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.Load(Stream inStream)
+   at umbraco.content.LoadXmlFromFile()
+ 2016-02-03 01:09:19,717 [P18564/D7/T32] INFO  umbraco.content - Loading content from database...
+ 2016-02-03 01:09:21,369 [P18564/D7/T32] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2016-02-03 01:09:21,371 [P18564/D7/T32] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 1ms)
+ 2016-02-03 01:09:25,374 [P18564/D7/T97] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 01:09:25,381 [P18564/D7/T123] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 01:33:51,268 [P18564/D7/T68] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt failed for username jonstodle@outlook.com from IP address ::1
+ 2016-02-03 01:35:42,503 [P18564/D7/T144] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt failed for username jonstodle@outlook.com from IP address ::1
+ 2016-02-03 01:35:51,309 [P18564/D7/T119] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-02-03 01:35:51,311 [P18564/D7/T119] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 1ms)
+ 2016-02-03 01:41:33,835 [P18564/D7/T133] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt failed for username jonstodle@outlook.com from IP address ::1
+ 2016-02-03 01:42:27,680 [P18564/D7/T43] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt failed for username jonstodle@outlook.com from IP address ::1
+ 2016-02-03 01:42:39,806 [P18564/D7/T121] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt failed for username jonstodle@outlook.com from IP address ::1
+ 2016-02-03 01:43:25,991 [P18564/D7/T117] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username jonstodle@gmail.com from IP address ::1
+ 2016-02-03 01:43:25,992 [P18564/D7/T117] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: jonstodle@gmail.com logged in from IP address ::1
+ 2016-02-03 01:43:26,842 [P18564/D7/T134] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-02-03 01:43:26,843 [P18564/D7/T134] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 1ms)
+ 2016-02-03 01:43:26,927 [P18564/D7/T53] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2016-02-03 01:43:26,929 [P18564/D7/T53] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 1ms)
+ 2016-02-03 01:43:26,929 [P18564/D7/T48] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-02-03 01:43:26,931 [P18564/D7/T48] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 1ms)
+ 2016-02-03 01:43:26,950 [P18564/D7/T48] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-02-03 01:43:26,950 [P18564/D7/T48] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-02-03 01:43:26,953 [P18564/D7/T48] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-02-03 01:43:26,953 [P18564/D7/T48] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 0ms)
+ 2016-02-03 01:46:07,258 [P18564/D7/T13] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt failed for username jonstodle@outlook.com from IP address ::1
+ 2016-02-03 01:46:18,931 [P18564/D7/T13] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username jonstodle from IP address ::1
+ 2016-02-03 01:46:18,931 [P18564/D7/T13] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: jonstodle logged in from IP address ::1
+ 2016-02-03 01:46:19,670 [P18564/D7/T13] ERROR Umbraco.Web.WebApi.Filters.AngularAntiForgeryHelper - Could not validate XSRF token
+System.Web.Mvc.HttpAntiForgeryException (0x80004005): The provided anti-forgery token was meant for user "jonstodle@outlook.com", but the current user is "jonstodle".
+   at System.Web.Helpers.AntiXsrf.TokenValidator.ValidateTokens(HttpContextBase httpContext, IIdentity identity, AntiForgeryToken sessionToken, AntiForgeryToken fieldToken)
+   at System.Web.Helpers.AntiXsrf.AntiForgeryWorker.Validate(HttpContextBase httpContext, String cookieToken, String formToken)
+   at System.Web.Helpers.AntiForgery.Validate(String cookieToken, String formToken)
+   at Umbraco.Web.WebApi.Filters.AngularAntiForgeryHelper.ValidateTokens(String cookieToken, String headerToken)
+ 2016-02-03 01:48:06,240 [P18564/D7/T134] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Does IsolatedStorageSettings persist through an app update?' with Id '0' has been published.
+ 2016-02-03 01:48:08,370 [P18564/D7/T134] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ICacheRefresher
+ 2016-02-03 01:48:08,372 [P18564/D7/T134] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 0 (took 1ms)
+ 2016-02-03 01:48:12,463 [P18564/D7/T28] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 01:48:12,472 [P18564/D7/T135] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 01:48:38,575 [P18564/D7/T38] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Dynamic application title on Windows Phone 7.x using recources' with Id '0' has been published.
+ 2016-02-03 01:48:45,744 [P18564/D7/T53] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 01:48:45,760 [P18564/D7/T132] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 01:54:30,220 [P18564/D7/T134] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'iOS 9 app switcher switches direction' with Id '0' has been published.
+ 2016-02-03 01:54:36,499 [P18564/D7/T141] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 01:54:36,513 [P18564/D7/T139] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 01:55:04,429 [P18564/D7/T133] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Will the PDK clean up Android?' with Id '0' has been published.
+ 2016-02-03 01:55:10,950 [P18564/D7/T68] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 01:55:10,958 [P18564/D7/T131] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 01:55:50,824 [P18564/D7/T117] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'UWP ListView without highlighting and stuff' with Id '0' has been published.
+ 2016-02-03 01:55:57,050 [P18564/D7/T38] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 01:55:57,065 [P18564/D7/T115] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 01:56:39,449 [P18564/D7/T123] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'WrapPanel with full width columns' with Id '0' has been published.
+ 2016-02-03 01:56:45,839 [P18564/D7/T48] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 01:56:45,853 [P18564/D7/T137] INFO  umbraco.content - Saved Xml to file.
