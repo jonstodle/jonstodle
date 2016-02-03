@@ -1,0 +1,46 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = null;
+	var homePage = CurrentPage.AncestorsOrSelf(1).First();
+	var menuItems = new List<dynamic>(homePage.Children);
+	menuItems.Insert(0, homePage);
+}
+<!DOCTYPE html>
+<html ng-app="jsApp">
+<head>
+	<title>@Umbraco.Field("tabText", recursive: true) | @CurrentPage.Title</title>
+	<link href="~/Assets/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href="~/Css/bootstrap.min.css" rel="stylesheet" />
+	<link href="~/Css/ui-bootstrap-csp.css" rel="stylesheet" />
+	<link href="~/Css/skeleton.css" rel="stylesheet" />
+	@RenderSection("styles", false)
+	<link href="~/Css/style.min.css" rel="stylesheet" />
+	<link href="~/Css/text-styles.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="site-container">
+		<header>
+			<a href="~/" class="no-decoration"><h1 class="site-header">@Umbraco.Field("siteTitle", recursive: true)</h1></a>
+		</header>
+		<nav class="row site-nav">
+			@foreach (var i in menuItems)
+			{
+				<a href="@i.Url" class="four columns site-nav @(CurrentPage.Id == i.Id ? "active" : "")"><span>@i.Title</span></a>
+			}
+		</nav>
+		<div class="content-container">
+			@RenderBody()
+		</div>
+		<footer>
+			<a rel="license" class="no-decoration" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align: middle;" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a> | Jon Stødle<span class="@(string.IsNullOrEmpty(Umbraco.Field("twitterUrl", recursive: true).ToString()) || string.IsNullOrEmpty(Umbraco.Field("twitterName", recursive: true).ToString()) ? "hide" : null)"> | <a href="@Umbraco.Field("twitterUrl", recursive: true)">@@@Umbraco.Field("twitterName", recursive: true)</a></span>
+		</footer>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script src="~/Scripts/angular-touch.min.js"></script>
+	<script src="~/Scripts/ui-bootstrap.min.js"></script>
+	<script src="~/Scripts/ui-bootstrap-tpls.min.js"></script>
+	@RenderSection("scripts", false)
+	<script src="~/Scripts/App.js"></script>
+</body>
+</html>

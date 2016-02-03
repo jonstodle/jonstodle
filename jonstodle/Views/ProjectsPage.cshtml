@@ -1,0 +1,24 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = "Layout.cshtml";
+	var projects = new List<dynamic>(CurrentPage.Children);
+	projects = projects.OrderBy(x => x.ProjectName).ToList();
+}
+<div class="body-text">
+	<h5 class="text-center">@(((string)CurrentPage.Text).ToUpper())</h5>
+
+	@foreach (var i in projects)
+	{
+		<div class="row">
+			<div class="twelve columns project-list-item-container" style="background: url(@i.GetCropUrl("banner", "Project banner"))">
+				<a href="@i.Url">
+					<div class="project-list-item">
+						<div class="project-list-item-name-container">
+							<h4 class="project-list-item-name">@i.Title</h4>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	}
+</div>

@@ -1,0 +1,32 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = "Layout.cshtml";
+}
+<div class="row blog-list-item">
+	<h3 class="twelve columns blog-title">@CurrentPage.Title</h3>
+	<div class="twelve columns">
+		<span class="blog-metadata">written by</span> @CurrentPage.WriterName |
+		<span class="blog-metadata">created at</span> @(((DateTime)CurrentPage.CreateDate).ToString("d"))
+		<span class="@(Math.Floor((CurrentPage.UpdateDate - CurrentPage.CreateDate).TotalDays) > 0 ? string.Empty : "hide")">| <span class="blog-metadata">updated at</span> @(((DateTime)CurrentPage.UpdateDate).ToString("d"))</span>
+	</div>
+	<div class="twelve columns blog-post">
+		@Html.Markdown(Umbraco.Field("bodyText").ToString())
+	</div>
+	<div class="twelve columns blog-comments">
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+			/* * * CONFIGURATION VARIABLES * * */
+			var disqus_shortname = 'jonstodle';
+			var disqus_identifier = "@CurrentPage.Id.ToString()";
+			var disqus_title = "@CurrentPage.Title";
+
+			/* * * DON'T EDIT BELOW THIS LINE * * */
+			(function () {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+	</div>
+</div>

@@ -1,0 +1,22 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = "Layout.cshtml";
+	var images = CurrentPage.Images.Split(',');
+}
+<div class="body-text" ng-controller="projectController">
+	<div class="row">
+		<div class="one-half column">
+			<carousel>
+				@foreach (var i in images)
+				{
+					<slide class=""><img class="" src="@Umbraco.Media(i).Url" alt="" /></slide>
+				}
+			</carousel>
+		</div>
+		<div class="one-half column project-description">
+			<h2 class="">@CurrentPage.Title</h2>
+			@CurrentPage.Description
+			<p class="store-link-container@(string.IsNullOrEmpty((string)CurrentPage.StoreLink) ? " hide" : "")"><a class="store-link no-decoration" href="@CurrentPage.StoreLink"><img class="store-link-image" src="~/Images/258x67_WPS_Download_revblk.png" alt="Windows Store Link" /></a></p>
+		</div>
+	</div>
+</div>

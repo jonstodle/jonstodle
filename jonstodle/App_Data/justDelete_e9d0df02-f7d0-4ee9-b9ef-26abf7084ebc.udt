@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocumentType>
+  <Info>
+    <Name>Blog Post</Name>
+    <Alias>BlogPost</Alias>
+    <Icon>icon-umb-content</Icon>
+    <Thumbnail>folder.png</Thumbnail>
+    <Description />
+    <AllowAtRoot>False</AllowAtRoot>
+    <IsListView>False</IsListView>
+    <Compositions />
+    <AllowedTemplates>
+      <Template>BlogPost</Template>
+    </AllowedTemplates>
+    <DefaultTemplate>BlogPost</DefaultTemplate>
+  </Info>
+  <Structure />
+  <GenericProperties>
+    <GenericProperty>
+      <Name>Title</Name>
+      <Alias>title</Alias>
+      <Type>Umbraco.Textbox</Type>
+      <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+      <Tab>Post</Tab>
+      <Mandatory>True</Mandatory>
+      <Validation />
+      <Description><![CDATA[]]></Description>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>Body Text</Name>
+      <Alias>bodyText</Alias>
+      <Type>Umbraco.TinyMCEv3</Type>
+      <Definition>ca90c950-0aff-4e72-b976-a30b1ac57dad</Definition>
+      <Tab>Post</Tab>
+      <Mandatory>True</Mandatory>
+      <Validation />
+      <Description><![CDATA[]]></Description>
+    </GenericProperty>
+  </GenericProperties>
+  <Tabs>
+    <Tab>
+      <Id>16</Id>
+      <Caption>Post</Caption>
+      <SortOrder>0</SortOrder>
+    </Tab>
+  </Tabs>
+</DocumentType>
