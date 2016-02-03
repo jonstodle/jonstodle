@@ -1,9 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="..\packages\UmbracoCms.7.3.7\build\UmbracoCms.props" Condition="Exists('..\packages\UmbracoCms.7.3.7\build\UmbracoCms.props')" />
-  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
-  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -110,40 +108,8 @@
       <HintPath>..\packages\Lucene.Net.2.9.4.1\lib\net40\Lucene.Net.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MarkdownDeep, Version=1.1.4117.36784, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MarkdownDeep.NET.1.4\lib\.NetFramework 3.5\MarkdownDeep.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.0.1011, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.AI.DependencyCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.1.2.3\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.1.2.3\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.1.2.3\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.AI.Web, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.1.2.3\lib\net45\Microsoft.AI.Web.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.AI.WindowsServer, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.1.2.3\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Microsoft.ApplicationBlocks.Data, Version=1.0.1559.20655, Culture=neutral">
       <HintPath>..\packages\UmbracoCms.Core.7.3.7\lib\Microsoft.ApplicationBlocks.Data.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.ApplicationInsights, Version=1.2.3.490, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ApplicationInsights.1.2.3\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -152,10 +118,6 @@
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
@@ -332,12 +294,33 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\favicon.ico" />
+    <Content Include="Config\grid.editors.config.js" />
+    <Content Include="Config\Lang\cs-CZ.user.xml" />
+    <Content Include="Config\Lang\da-DK.user.xml" />
+    <Content Include="Config\Lang\de-DE.user.xml" />
+    <Content Include="Config\Lang\en-GB.user.xml" />
+    <Content Include="Config\Lang\en-US.user.xml" />
+    <Content Include="Config\Lang\es-ES.user.xml" />
+    <Content Include="Config\Lang\fr-FR.user.xml" />
+    <Content Include="Config\Lang\he-IL.user.xml" />
+    <Content Include="Config\Lang\it-IT.user.xml" />
+    <Content Include="Config\Lang\ja-JP.user.xml" />
+    <Content Include="Config\Lang\ko-KR.user.xml" />
+    <Content Include="Config\Lang\nb-NO.user.xml" />
+    <Content Include="Config\Lang\nl-NL.user.xml" />
+    <Content Include="Config\Lang\pl-PL.user.xml" />
+    <Content Include="Config\Lang\pt-BR.user.xml" />
+    <Content Include="Config\Lang\ru-RU.user.xml" />
+    <Content Include="Config\Lang\sv-SE.user.xml" />
+    <Content Include="Config\Lang\zh-CN.user.xml" />
     <Content Include="Css\bootstrap.min.css" />
     <Content Include="Css\skeleton.css" />
     <Content Include="Css\style.css" />
     <Content Include="Css\style.min.css" />
     <Content Include="Css\text-styles.css" />
     <Content Include="Css\ui-bootstrap-csp.css" />
+    <Content Include="default.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -347,6 +330,19 @@
     <Content Include="scripts\ui-bootstrap-tpls.min.js" />
     <Content Include="scripts\ui-bootstrap.min.js" />
     <Content Include="Views\Web.config" />
+    <Content Include="Config\ClientDependency.config" />
+    <Content Include="Views\BlogPage.cshtml" />
+    <Content Include="Views\BlogPost.cshtml" />
+    <Content Include="Views\Home.cshtml" />
+    <Content Include="Views\Layout.cshtml" />
+    <Content Include="Views\Project.cshtml" />
+    <Content Include="Views\ProjectsPage.cshtml" />
+    <Content Include="Views\RSS.cshtml" />
+    <Content Include="scripts\angular-touch.min.js.map" />
+    <Content Include="Css\style.css.map" />
+    <Content Include="Css\style.scss" />
+    <Content Include="Css\_mixins.scss" />
+    <Content Include="Css\_variables.scss" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Media.cshtml" />
@@ -368,22 +364,9 @@
     <Content Include="Config\ExamineIndex.config" />
     <Content Include="Config\EmbeddedMedia.config" />
     <Content Include="Config\Dashboard.config" />
-    <Content Include="Config\ClientDependency.config" />
     <Content Include="Config\BaseRestExtensions.config" />
     <Content Include="Config\applications.config" />
     <Content Include="Config\404handlers.config" />
-    <Content Include="Views\BlogPage.cshtml" />
-    <Content Include="Views\BlogPost.cshtml" />
-    <Content Include="Views\Home.cshtml" />
-    <Content Include="Views\Layout.cshtml" />
-    <Content Include="Views\Project.cshtml" />
-    <Content Include="Views\ProjectsPage.cshtml" />
-    <Content Include="Views\RSS.cshtml" />
-    <Content Include="scripts\angular-touch.min.js.map" />
-    <Content Include="Css\style.css.map" />
-    <Content Include="Css\style.scss" />
-    <Content Include="Css\_mixins.scss" />
-    <Content Include="Css\_variables.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -392,35 +375,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Config\grid.editors.config.js" />
-    <Content Include="Config\Lang\cs-CZ.user.xml" />
-    <Content Include="Config\Lang\da-DK.user.xml" />
-    <Content Include="Config\Lang\de-DE.user.xml" />
-    <Content Include="Config\Lang\en-GB.user.xml" />
-    <Content Include="Config\Lang\en-US.user.xml" />
-    <Content Include="Config\Lang\es-ES.user.xml" />
-    <Content Include="Config\Lang\fr-FR.user.xml" />
-    <Content Include="Config\Lang\he-IL.user.xml" />
-    <Content Include="Config\Lang\it-IT.user.xml" />
-    <Content Include="Config\Lang\ja-JP.user.xml" />
-    <Content Include="Config\Lang\ko-KR.user.xml" />
-    <Content Include="Config\Lang\nb-NO.user.xml" />
-    <Content Include="Config\Lang\nl-NL.user.xml" />
-    <Content Include="Config\Lang\pl-PL.user.xml" />
-    <Content Include="Config\Lang\pt-BR.user.xml" />
-    <Content Include="Config\Lang\ru-RU.user.xml" />
-    <Content Include="Config\Lang\sv-SE.user.xml" />
-    <Content Include="Config\Lang\zh-CN.user.xml" />
-    <Content Include="default.aspx" />
-    <Content Include="Global.asax" />
-    <Content Include="scripts\ai.0.15.0-build58334.js" />
-    <Content Include="scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Helpers\MarkdownHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -455,18 +414,19 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
-    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
     <Error Condition="!Exists('..\packages\UmbracoCms.7.3.7\build\UmbracoCms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.7.3.7\build\UmbracoCms.props'))" />
     <Error Condition="!Exists('..\packages\UmbracoCms.7.3.7\build\UmbracoCms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.7.3.7\build\UmbracoCms.targets'))" />
-    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
   </Target>
   <Import Project="..\packages\UmbracoCms.7.3.7\build\UmbracoCms.targets" Condition="Exists('..\packages\UmbracoCms.7.3.7\build\UmbracoCms.targets')" />
-  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
