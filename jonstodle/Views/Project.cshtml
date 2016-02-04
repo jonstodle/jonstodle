@@ -16,7 +16,18 @@
 		<div class="one-half column project-description">
 			<h2 class="">@CurrentPage.Title</h2>
 			@CurrentPage.Description
-			<p class="store-link-container@(string.IsNullOrEmpty((string)CurrentPage.StoreLink) ? " hide" : "")"><a class="store-link no-decoration" href="@CurrentPage.StoreLink"><img class="store-link-image" src="~/Images/258x67_WPS_Download_revblk.png" alt="Windows Store Link" /></a></p>
+			<p class="store-link-container@(string.IsNullOrEmpty((string)CurrentPage.StoreLink) ? " hide" : "")">
+				<a class="store-link no-decoration" href="@CurrentPage.StoreLink">
+					@if (CurrentPage.StoreLink.Contains("windowsphone"))
+					{
+						<img class="store-link-image" src="~/Assets/258x67_WPS_Download_revblk.png" alt="Windows Store Link" />
+					}
+					else
+					{
+						<img class="store-link-image" src="~/Assets/english_get_it_win_10.png" alt="Windows Store Link" />
+					}
+				</a>
+			</p>
 		</div>
 	</div>
 </div>

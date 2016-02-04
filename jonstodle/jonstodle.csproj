@@ -293,6 +293,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\258x67_WPS_Download_revblk.png" />
+    <Content Include="Assets\English_Get_it_Win_10.png" />
     <Content Include="Assets\favicon.ico" />
     <Content Include="Config\grid.editors.config.js" />
     <Content Include="Config\Lang\cs-CZ.user.xml" />
