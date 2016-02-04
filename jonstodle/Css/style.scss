@@ -79,8 +79,8 @@ footer {
 		}
 	}
 
-	&-controls{
-		& button{
+	&-controls {
+		& button {
 			width: 49%;
 		}
 	}
@@ -188,11 +188,19 @@ footer {
 
 .project {
 	&-list-item {
-		@include vertical-align-parent;
-		height: 200px;
-
 		&-container {
 			margin-bottom: 80px;
+		}
+
+		h2 {
+			display: inline;
+			margin-left: 10px;
+		}
+
+		&-image {
+			display: inline;
+			height: 100px;
+			width: 100px;
 		}
 
 		&-name-container {

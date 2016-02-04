@@ -7,15 +7,14 @@
 <div class="body-text">
 	<h5 class="text-center">@(((string)CurrentPage.Text).ToUpper())</h5>
 
-	@foreach (var i in projects)
+	@foreach (var item in projects)
 	{
 		<div class="row">
-			<div class="twelve columns project-list-item-container" style="background: url(@i.GetCropUrl("banner", "Project banner"))">
-				<a href="@i.Url">
+			<div class="twelve columns project-list-item-container">
+				<a href="@item.Url">
 					<div class="project-list-item">
-						<div class="project-list-item-name-container">
-							<h4 class="project-list-item-name">@i.Title</h4>
-						</div>
+						<img class="project-list-item-image" alt="@item.Title" src="@item.GetCropUrl("banner", "App badge")" />
+						<h2>@item.Title</h2>
 					</div>
 				</a>
 			</div>

@@ -2,8 +2,10 @@
   text-decoration: none;
   color: black;
   border-bottom: 1px solid black; }
+
 a.no-decoration, a.no-decoration:hover, a.no-decoration:active, a.no-decoration:visited {
   border-bottom-color: white; }
+
 a.site-nav {
   text-align: center;
   font-weight: 600;
@@ -36,6 +38,7 @@ footer {
 
 .carousel-container {
   position: relative; }
+
 .carousel-content li {
   position: absolute;
   pointer-events: none;
@@ -53,6 +56,7 @@ footer {
     -moz-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s; }
+
 .carousel-controls button {
   width: 49%; }
 
@@ -61,14 +65,19 @@ footer {
 
 .blog-comments {
   margin-top: 20px; }
+
 .blog-list-header:hover {
   cursor: pointer; }
+
 .blog-list-item {
   margin-top: 80px; }
+
 .blog-title {
   margin-bottom: 0; }
+
 .blog-metadata {
   font-variant: small-caps; }
+
 .blog-post {
   margin-top: 20px;
   text-align: justify;
@@ -96,12 +105,13 @@ footer {
   line-height: 1em; }
 
 .site-header {
-  line-height: 0.8em; }
+  line-height: .8em; }
+
 .site-nav {
   margin-top: 30px; }
 
 .subtle, .blog-metadata {
-  opacity: 0.4; }
+  opacity: .4; }
 
 .image-view {
   position: relative; }
@@ -110,28 +120,36 @@ footer {
 
 .text-left {
   text-align: left; }
+
 .text-right, .site-header {
   text-align: right; }
+
 .text-center, .store-link-container {
   text-align: center; }
 
-.project-list-item {
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  height: 200px; }
-  .project-list-item-container {
-    margin-bottom: 80px; }
-  .project-list-item-name-container {
-    position: relative;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    transform: translateY(-100%);
-    background: rgba(255, 255, 255, 0.7); }
-  .project-list-item-name {
-    margin: 0 0 0 10px; }
+.project-list-item-container {
+  margin-bottom: 80px; }
+
+.project-list-item h2 {
+  display: inline;
+  margin-left: 10px; }
+
+.project-list-item-image {
+  display: inline;
+  height: 100px;
+  width: 100px; }
+
+.project-list-item-name-container {
+  position: relative;
+  top: 100%;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  background: rgba(255, 255, 255, 0.7); }
+
+.project-list-item-name {
+  margin: 0 0 0 10px; }
+
 .project-description {
   text-align: justify; }
 
-
-/*# sourceMappingURL=style.css.map */
