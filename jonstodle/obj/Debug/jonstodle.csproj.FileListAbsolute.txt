@@ -106,3 +106,5 @@ C:\Dev\jonstodle\jonstodle\bin\log4net.dll
 C:\Dev\jonstodle\jonstodle\bin\Microsoft.ApplicationBlocks.Data.dll
 C:\Dev\jonstodle\jonstodle\bin\Microsoft.Web.Infrastructure.dll
 C:\Dev\jonstodle\jonstodle\bin\TidyNet.dll
+C:\Dev\jonstodle\jonstodle\bin\MarkdownDeep.dll
+C:\Dev\jonstodle\jonstodle\bin\MarkdownDeep.pdb
