@@ -86,6 +86,8 @@ footer {
   -moz-word-wrap: break-word;
   -o-word-wrap: break-word;
   word-wrap: break-word; }
+  .blog-post img {
+    max-width: 100%; }
 
 .hide {
   display: none; }
