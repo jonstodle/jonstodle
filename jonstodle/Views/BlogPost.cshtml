@@ -3,7 +3,7 @@
 	Layout = "Layout.cshtml";
 }
 <div class="row blog-list-item">
-	<h3 class="twelve columns blog-title">@CurrentPage.Title</h3>
+	<h3 class="twelve columns blog-title">@CurrentPage.Name</h3>
 	<div class="twelve columns">
 		<span class="blog-metadata">written by</span> @CurrentPage.WriterName |
 		<span class="blog-metadata">created at</span> @(((DateTime)CurrentPage.CreateDate).ToString("d"))
@@ -19,7 +19,7 @@
 			/* * * CONFIGURATION VARIABLES * * */
 			var disqus_shortname = 'jonstodle';
 			var disqus_identifier = "@CurrentPage.Key.ToString()";
-			var disqus_title = "@CurrentPage.Title";
+			var disqus_title = "@CurrentPage.Name";
 
 			/* * * DON'T EDIT BELOW THIS LINE * * */
 			(function () {

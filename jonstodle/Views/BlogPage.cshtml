@@ -7,7 +7,7 @@
 	@foreach (var i in blogItems)
 	{
 		<div class="row blog-list-item">
-			<a class="twelve columns no-decoration blog-list-header" href="@i.Url"><h3 class="blog-title">@i.Title</h3></a>
+			<a class="twelve columns no-decoration blog-list-header" href="@i.Url"><h3 class="blog-title">@i.Name</h3></a>
 			<div class="twelve columns">
 				<span class="blog-metadata">written by</span> @i.WriterName |
 				<span class="blog-metadata">created at</span> @(((DateTime)i.CreateDate).ToString("d"))
