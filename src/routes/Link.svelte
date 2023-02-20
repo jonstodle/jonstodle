@@ -16,7 +16,7 @@
 
 <a
 	href="/{slug}"
-	class="aspect-square bg-cover relative group rounded-3xl overflow-clip"
+	class="aspect-square bg-cover relative group rounded-3xl overflow-clip hover:scale-105 transition-transform"
 	bind:this={rootTag}
 >
 	<div class="absolute inset-0 flex justify-center items-center">
