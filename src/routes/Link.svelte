@@ -20,7 +20,7 @@
 	bind:this={rootTag}
 >
 	<div class="absolute inset-0 flex justify-center items-center">
-		<i class="{icon} fa-10x opacity-75" />
+		<i class="{icon} fa-8x opacity-75" />
 	</div>
 	<div
 		class="absolute inset-0 flex justify-center items-center group-hover:backdrop-blur-lg [@media(hover:none)]:backdrop-blur-lg transition-all duration-300 p-2"
