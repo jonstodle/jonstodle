@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts */
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("/fonts/Atkinson-Hyperlegible-Regular-102.woff2");
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("/fonts/Atkinson-Hyperlegible-Bold-102.woff2");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("/fonts/Atkinson-Hyperlegible-Italic-102.woff2");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("/fonts/Atkinson-Hyperlegible-BoldItalic-102.woff2");
+  font-weight: bold;
+  font-style: italic;
+}
