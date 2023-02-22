@@ -31,7 +31,7 @@
 			>) or on Mastodon (<a
 				href="https://jonstodle.com/mastodon"
 				class="inline-block px-1 underline underline-offset-4 transition-transform hover:scale-105"
-				>@jonstodle@stodle.net</a
+				>@jon@stodle.net</a
 			>).
 		</p>
 	</div>
