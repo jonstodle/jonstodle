@@ -3,6 +3,10 @@
 	import { slugs } from '$lib/redirects.ts';
 </script>
 
+<svelte:head>
+	<title>Jon Grythe Stødle</title>
+</svelte:head>
+
 <section
 	class="p-4 rounded-3xl bg-neutral-800 grid grid-rows-[200px_1fr] md:grid-cols-[200px_1fr] gap-4"
 >
