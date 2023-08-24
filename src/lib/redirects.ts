@@ -36,17 +36,5 @@ export const slugs: Slug[] = [
 		title: 'Twitch',
 		url: 'https://www.twitch.tv/jonstodle',
 		icon: 'fa-brands fa-twitch'
-	},
-	{
-		slug: 'twitter',
-		title: 'Twitter',
-		url: 'https://twitter.com/jonstodle',
-		icon: 'fa-brands fa-twitter'
-	},
-	{
-		slug: 'linkedin',
-		title: 'LinkedIn',
-		url: 'https://www.linkedin.com/in/jonstodle/',
-		icon: 'fa-brands fa-linkedin'
 	}
 ];
