@@ -31,11 +31,11 @@
 			His exploits can be read either on his blog (<a
 				href="https://jonstodle.com/blog"
 				class="inline-block px-1 underline underline-offset-4 transition-transform hover:scale-105"
-				>https://jonstodle.com/blog</a
+				>https://blog.jonstodle.com</a
 			>) or on Mastodon (<a
 				href="https://jonstodle.com/mastodon"
 				class="inline-block px-1 underline underline-offset-4 transition-transform hover:scale-105"
-				>@jon@stodle.net</a
+				>@jonstodle@snabelen.no</a
 			>).
 		</p>
 	</div>
